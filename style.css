@@ -223,8 +223,8 @@ float: left;
 
 .section2 .section2-column img {
  float: left;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   
 }
 
@@ -239,37 +239,6 @@ float: left;
 
 
 /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .section2 .section2-column {
-  float: left;
-  width: 100%;
-      
-    
-
-  
-}
-    
-      .section2 .section2-column img{
-  float: left;
-  width: 100%;
-
-  
-}
-    
-      .section2 .section2-column p{
-  float: none;
-  width: 300px;
-text-align: center;
-  
-}
-          .section2 .section2-column h2,h1{
-  float: none;
-  width: 100%;
-text-align: center;
-  
-}
-
-}
 
 
     
@@ -298,3 +267,34 @@ text-align: center;
     
 
 }
+
+
+@media screen and (max-width: 800px) {
+.section2 .section2-column {
+  float: none;
+  width: 100%;
+      text-align: center;
+
+  
+}
+          .section2 .section2-column p{
+  float: none;
+  width: 100%;
+
+  
+}
+      .section2 .section2-column img {
+  float: none;
+  width: 200px;
+
+  
+}
+          .section2 .section2-column h2,h1{
+  float: none;
+  width: 100%;
+text-align: center;
+  
+}
+
+}
+
