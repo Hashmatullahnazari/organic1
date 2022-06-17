@@ -1,10 +1,13 @@
 *, *:before, *:after {
 box-sizing: border-box;
+    
 }
+
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+ font-family: 'M PLUS Rounded 1c', sans-serif;
+
 }
 
 .topnav {
@@ -108,7 +111,7 @@ display: block;
     position: relative;
     width: 100%;
 }
-.hero-image {
+.section1 .section1-image {
 background-image: url(images/main.png);
     background-color: #cccccc;
     height: 730px;
@@ -119,11 +122,179 @@ background-image: url(images/main.png);
 
 }
 
-.hero-text {
+.section1 .section1-text {
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+.section1 .section1-btn {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+/* Green */
+.section1 .section1-success {
+  border-color: #04AA6D;
+  color: green;
+}
+
+
+
+.section1 .section1-success:hover {
+  background: #04AA6D;
+  color: white;
+}
+
+/* Blue */
+.section1 .section1-info {
+  border-color: #2196F3;
+  color: dodgerblue
+}
+
+.section1 .section1-info:hover {
+  background: #2196F3;
+  color: white;
+}
+
+
+@media screen and (max-width: 850px) {
+.section1
+{
+    position: relative;
+    width: 100%;
+}
+    
+.section1 .section1-image {
+background-image: url(images/main.png);
+    background-color: #cccccc;
+    height: 730px;
+    background-position: center;
+    background-repeat: ;
+    background-size: cover;
+    background-position: 51% 75.87%;
+
+}
+    
+.section1 .section1-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+    width: 100%;
+}
+
+    .section1 .section1-btn {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+        width: 100%;
+
+}
+
+
+}
+.section2{
+    width: 100%;
+        
+  padding: 10px;
+}
+.section2 .section2-column {
+float: left;
+    width: 50%;
+    padding: 40px;
+  
+}
+
+.section2 .section2-column img {
+ float: left;
+    width: 200px;
+    height: 200px;
+  
+}
+
+
+
+.section2-row .section2-clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .section2 .section2-column {
+  float: left;
+  width: 100%;
+      
+    
+
+  
+}
+    
+      .section2 .section2-column img{
+  float: left;
+  width: 100%;
+
+  
+}
+    
+      .section2 .section2-column p{
+  float: none;
+  width: 300px;
+text-align: center;
+  
+}
+          .section2 .section2-column h2,h1{
+  float: none;
+  width: 100%;
+text-align: center;
+  
+}
+
+}
+
+
+    
+
+
+@media screen and (max-width: 870px) {
+  .section2 .section2-column {
+  float: none;
+  width: 100%;
+      text-align: center;
+
+  
+}
+          .section2 .section2-column p{
+  float: none;
+  width: 100%;
+
+  
+}
+      .section2 .section2-column img {
+  float: none;
+  width: 200px;
+
+  
+}
+    
+
 }
