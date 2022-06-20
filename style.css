@@ -214,18 +214,25 @@ background-image: url(images/main.png);
         
   padding: 10px;
 }
-.section2 .section2-column {
-float: left;
+.section2 .column {
+      float: left;
     width: 50%;
-    padding: 40px;
-  
+    padding: 10px;
+    height: 400px;
 }
 
-.section2 .section2-column img {
- float: left;
-    width: 150px;
-    height: 150px;
-  
+.section2 .column img {
+  float: left;
+  width: 50%;
+  padding: 10px;
+ 
+}
+
+.section2 .column .content {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
 
@@ -244,57 +251,45 @@ float: left;
     
 
 
-@media screen and (max-width: 870px) {
-  .section2 .section2-column {
+@media screen and (max-width: 900px) {
+.section2 .column {
+  float: left;
+  width: 100%;
+  padding: 70px;
+  
+}
+
+
+ 
+    
+
+}
+
+@media screen and (max-width: 700px) {
+.section2 .column  {
   float: none;
   width: 100%;
-      text-align: center;
-
+ 
   
 }
-          .section2 .section2-column p{
+.section2 .column img  {
   float: none;
   width: 100%;
-
+ 
   
 }
-      .section2 .section2-column img {
-  float: none;
-  width: 200px;
 
+    
+    .section2 .column .content  {
+  float: left;
+  width: 100%;
+ 
   
 }
+ 
     
 
 }
 
 
-@media screen and (max-width: 800px) {
-.section2 .section2-column {
-  float: none;
-  width: 100%;
-      text-align: center;
-
-  
-}
-          .section2 .section2-column p{
-  float: none;
-  width: 100%;
-
-  
-}
-      .section2 .section2-column img {
-  float: none;
-  width: 200px;
-
-  
-}
-          .section2 .section2-column h2,h1{
-  float: none;
-  width: 100%;
-text-align: center;
-  
-}
-
-}
 
