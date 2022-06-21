@@ -237,12 +237,72 @@ background-image: url(images/main.png);
 
 
 
-.section2-row .section2-clearfix::after {
+.section2 .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
+
+/* Create two equal columns that floats next to each other */
+
+
+.section3 {
+  padding: 64px;
+}
+
+.section3 .row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.section3 .column-66 {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.section3 .column-33 {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.section3 .large-font {
+  font-size: 48px;
+}
+
+.section3 .xlarge-font {
+  font-size: 64px
+}
+
+.section3 .button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+
+.section3 img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .section3 .column-66,
+  .section3 .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  .section3 img {
+    margin: auto;
+  }
+}
 
 
 /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
