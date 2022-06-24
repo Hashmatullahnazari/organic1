@@ -297,173 +297,131 @@ background-image: url(images/main.png);
 .section4 {
 max-width: 100%;
 padding: 64px;
-  background:#f2b124 ;
-}
-.slideshow-container {
-  position: relative;
-  
+  background:green ;
 }
 
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 80px;
-  text-align: center;
-}
-
-
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-}
-
-/* The dot/bullet/indicator container */
-.dot-container {
-    text-align: center;
-    padding: 20px;
-    
-}
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #faff0d;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-
-
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Add an italic font style to all quotes */
-q {font-style: italic;}
-
-/* Add a blue color to the author */
-.author {color: cornflowerblue;}
-
-
-@media screen and (max-width: 1000px) {
-  .section4 {
-max-width: 100%;
-padding: 64px;
-  background:#f2b124 ;
-}
-.slideshow-container {
-  position: relative;
-  
-}
-
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 80px;
-  text-align: center;
-    
-}
-    
-      .mySlides img {
+.section4 .swiper {
   width: 100%;
-        height: 100px;
-  padding: 10px;
-  text-align: center;
-       
-    
+ 
 }
 
-
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.section4 .swiper img{
+  width: 400px;
+  height: 300px;
 }
 
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
+     .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+
+      @media only screen and (min-width: 769px) {
+        .swiper-slide:first-child {
+          transition: transform 100ms;
+        }
+
+        .swiper-slide:first-child img {
+          transition: box-shadow 500ms;
+        }
+
+        .swiper-slide.swiper-slide-active:first-child {
+          transform: translateX(50%);
+          z-index: 2;
+        }
+
+        .swiper-slide.swiper-slide-active:first-child img {
+          box-shadow: 0px 32px 80px rgba(0, 0, 0, 0.35);
+        }
+
+        .swiper-slide:nth-child(2) {
+          transition: transform 100ms;
+        }
+
+        .swiper-slide.swiper-slide-next:nth-child(2) {
+          transform: translateX(55%);
+          z-index: 1;
+        }
+
+        .swiper[dir="rtl"] .swiper-slide.swiper-slide-active:first-child {
+          transform: translateX(-50%);
+        }
+
+        .swiper[dir="rtl"] .swiper-slide.swiper-slide-next:nth-child(2) {
+          transform: translateX(-55%);
+        }
+      }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .slideshow-container .mySlides1  {
+    width: 50%;
+    float:left;
+  }
+  }
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+@media screen and (max-width: 500px) {
+  .mySlides1 .column img {
+    width: 100%;
+   float:none;
+  }
+}
+.section5 {
+    width: 100%;
+  padding: 64px;
+    background: #f0cf56;
+    background: #f0cf56;
+}
+
+.section5 .row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.section5 .column-66 {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.section5 .column-33 {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.section5 .large-font {
+  font-size: 48px;
+}
+
+.section5 .xlarge-font {
+  font-size: 64px
+}
+
+.section5 .button {
+  border: none;
   color: white;
-}
-
-/* The dot/bullet/indicator container */
-.dot-container {
-    text-align: center;
-    padding: 20px;
-    
-}
-
-/* The dots/bullets/indicators */
-.dot {
+  padding: 14px 28px;
+  font-size: 16px;
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  background-color: #04AA6D;
 }
 
-
-
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #717171;
+.section5 img {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
-/* Add an italic font style to all quotes */
-q {font-style: italic;}
-
-/* Add a blue color to the author */
-.author {color: cornflowerblue;}
-}
 
 @media screen and (max-width: 1000px) {
   .section3 .column-66,
@@ -521,6 +479,18 @@ q {font-style: italic;}
  
     
 
+}
+
+
+@media screen and (max-width: 1000px) {
+  .section5 .column-66,
+  .section5 .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  .section3 img {
+    margin: auto;
+  }
 }
 
 

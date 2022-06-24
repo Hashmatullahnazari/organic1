@@ -9,6 +9,12 @@
        <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=M+PLUS+Rounded+1c:wght@300;400&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </head>
 <body>
   
@@ -44,15 +50,15 @@
     <div class="section2">
 <div class="row">
   <div class="column" style="">
-   <img src="images/1%20(1).png" alt="" width=""/>
+   <img src="images/img1.png" alt="" width=""/>
    <div class="content">
     <h2>Caesar salad</h2>
   <h1>$20</h1>
-   <p>Resize the browser window to see the responsive effect (the columns will stack on top of each other instead of floating next to each other, when the screen is less than 600px wide).</p>
+     <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
      </div>
   </div>
   <div class="column" style="">
-   <img src="images/3%20(1).png" alt="" width=""/>
+   <img src="images/img2.png" alt="" width=""/>
  <div class="content">
    <h2>Greek salad</h2>
   <h1>$45</h1>
@@ -61,20 +67,20 @@
   </div>
   
     <div class="column" style="">
-   <img src="images/4%20(1).png" alt="" width=""/>
+   <img src="images/img3.png" alt="" width=""/>
  <div class="content">
   <h2>Mexican salad</h2>
   <h1>$13</h1>
-   <p>Resize the browser window to see the responsive effect (the columns will stack on top of each other instead of floating next to each other, when the screen is less than 600px wide).</p>
+    <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
      </div>
   </div>
   
     <div class="column" style="">
-   <img src="images/4.png" alt="" width=""/>
+   <img src="images/img4.png" alt="" width=""/>
  <div class="content">
     <h2>Classic Ricotta</h2>
   <h1>$24</h1>
-   <p>Resize the browser window to see the responsive effect (the columns will stack on top of each other instead of floating next to each other, when the screen is less than 600px wide).</p>
+   <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
      </div>
   </div>
   
@@ -98,51 +104,84 @@
 </div>
 </div>
  
- <!DOCTYPE html>
-<html>
-<head>
-<title>HTML, CSS and JavaScript demo</title>
-</head>
-<body>
-<!-- Start your code here -->
 <div class="section4">
-<div class="slideshow-container">
+<div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="images/img1.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="images/img2.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="images/img3.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+             src="images/img4.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="images/img5.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="images/img6.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="images/img7.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="images/img6.png"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="images/img7.png"
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-scrollbar"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 
-<div class="mySlides">
-  <q><img src="images/img5.png" alt="" width="400" height="400"/></q>
-   <q><img src="images/img6.png" alt="" width="400" height="400"/></q>
-   <q><img src="images/img7.png" alt="" width="400" height="400"/></q>
 </div>
 
-<div class="mySlides">
-  <q><img src="images/img8.png" alt="" width="400" height="400"/></q>
-   <q><img src="images/img9.png" alt="" width="400" height="400"/></q>
-   <q><img src="images/img10.png" alt="" width="400" height="400"/></q>
-</div>
+
+<div class="section5">
 <div class="row">
-<div class="column">
-<div class="mySlides">
-    <q><img src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg" alt="" width="400" height="400"/></q>
-   <q><img src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg" alt="" width="400" height="400"/></q>
-   <q><img src="https://images.pexels.com/photos/1172253/pexels-photo-1172253.jpeg" alt="" width="400" height="400"/></q>
-</div>
-</div>
-</div>
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
+<div class="column-66">
+ <h1 class="xlarge-font"><b>Our Ice Cream</b></h1>
+<h1 class="large-font" style="color:MediumSeaGreen;"><b></b></h1>
+<p> Our Ice Cream
+Cras adipiscing enim eu turpis egestas pretium aenean pharetra magna. Tempus urna et pharetra pharetra massa massa ultricies mi quis. Ut faucibus pulvinar elementum  enim neque volutpat. Augue mauris augue neque gravida in.</p>
+<button class="button">Read More</button>
 
 </div>
+<div class="column-33">
+<img src="images/img11.png" width="" height="" >
 
-<div class="dot-container">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
 </div>
 </div>
 <!-- End your code here -->
-</body>
-</html>
+
   
     <script src="app.js"></script>
+   
 </body>
 </html>
