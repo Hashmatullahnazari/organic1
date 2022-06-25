@@ -361,6 +361,55 @@ padding: 64px;
   to {opacity: 1}
 }
 
+
+
+.section6 {
+    width: 100%;
+  padding: 64px;
+    background: blie;
+}
+
+.section6 .row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.section6 .column-66 {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.section6 .column-33 {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.section6 .large-font {
+  font-size: 48px;
+}
+
+.section6 .xlarge-font {
+  font-size: 64px
+}
+
+.section6 .button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+
+.section6 img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 400px) {
   .section4 .text {font-size: 11px}
@@ -468,6 +517,123 @@ padding: 64px;
   .section3 img {
     margin: auto;
   }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .section6 .column-66,
+  .section6 .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  .section6 img {
+    margin: auto;
+  }
+}
+
+
+.section7
+{
+    position: relative;
+    width: 100%;
+}
+.section7 .section7-image {
+background-image: url(images/sec7img3.png);
+    background-color: #cccccc;
+    height: 730px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+
+}
+
+.section7 .section7-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.section7 .section7-btn {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+/* Green */
+.section7 .section7-success {
+  border-color: #04AA6D;
+  color: green;
+}
+
+
+
+.section7 .section7-success:hover {
+  background: #04AA6D;
+  color: white;
+}
+
+/* Blue */
+.section7 .section7-info {
+  border-color: #2196F3;
+  color: dodgerblue
+}
+
+.section7 .section7-info:hover {
+  background: #2196F3;
+  color: white;
+}
+
+
+@media screen and (max-width: 850px) {
+.section7
+{
+    position: relative;
+    width: 100%;
+}
+    
+.section7 .section7-image {
+background-image: url(images/sec7img3.png);
+    background-color: #cccccc;
+    height: 730px;
+    background-position: center;
+    background-repeat: ;
+    background-size: cover;
+    background-position: 100% 75.87%;
+
+}
+    
+.section7 .section7-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+    width: 100%;
+}
+
+    .section7 .section7-btn {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+        width: 30%;
+
+}
+
+
 }
 
 
