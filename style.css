@@ -296,7 +296,7 @@ background-image: url(images/main.png);
 
 .section4 {
 max-width: 100%;
-    height: 600px;
+ 
 padding: 64px;
    background:#b98d2b ;
     position: relative;
@@ -306,60 +306,99 @@ padding: 64px;
 
 
 /* Slideshow container */
-.section4 .slideshow-container img{
-    display: flex;
-  height: 400px;
-    max-width: 50%;
-  justify-content: center;
-     align-items: center;
-  margin: auto;
+/* Slideshow container */
+.section4 .slideshow-container {
+    width: 100%;
+  position: relative;
+  background: #f1f1f1f1;
 }
 
-/* Caption text */
-.section4 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+/* Slides */
+.section4 .mySlides {
+  padding: 80px;
   text-align: center;
+    background: navajowhite;
 }
 
-/* Number text (1/3 etc) */
-.section4 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+.section4 .mySlides img {
+  float: left;
+ padding:1px;
+    height: 400px
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
   position: absolute;
-  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.section4 .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
 }
 
 /* The dots/bullets/indicators */
- .section4 .dot {
+.section4 .dot {
+  cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #13160e;
+  background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-
-
-/* Fading animation */
-.section4 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-@keyframes .section4 fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+/* On smaller screens, decrease text size */
+@media screen and (max-width: 900px) and (min-width: 0px) {
+  .section4 .text {
+      font-size: 11px;
+    
+    }
+    
+   .section4 .mySlides img {
+  float: left;
+ padding:1px;
+    height: 100px
 }
-
-
+    
+}
 
 .section6 {
     width: 100%;
@@ -408,54 +447,8 @@ padding: 64px;
   max-width: 100%;
 }
 
-/* On smaller screens, decrease text size */
-@media screen and (max-width: 900px) and (min-width: 0px) {
-  .section4 .text {font-size: 11px}
-    
-    
-    .section4 {
-max-width: 100%;
-    height: 450px;
-position: relative;
-  background:#b98d2b ;
-    
-}
 
-.section4 .slideshow-container img {
-    display: flex;
-    height: 300px;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-    
-  .section4 .slideshow-container img{
-    display: flex;
-    height: 300px;
-    max-width: 86%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-    
-    
-}
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .slideshow-container .mySlides1  {
-    width: 50%;
-    float:left;
-  }
-  }
-}
 
-@media screen and (max-width: 500px) {
-  .mySlides1 .column img {
-    width: 100%;
-   float:none;
-  }
-}
 .section5 {
     width: 100%;
   padding: 64px;
