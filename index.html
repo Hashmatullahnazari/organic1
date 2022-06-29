@@ -9,12 +9,8 @@
        <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=M+PLUS+Rounded+1c:wght@300;400&display=swap" rel="stylesheet">
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
-
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="splide.min.css">
+<script src="splide.min.js"></script>
 </head>
 <body>
   
@@ -105,56 +101,33 @@
 </div>
  
 <div class="section4">
-<div class="slideshow-container">
-
-<div class="mySlides">
-<img src="images/img1.png" style="width:33.33%">
-
-  
- <img src="images/img2.png" style="width:33.33%">
- 
-  
-<img src="images/img3.png" style="width:33.33%">
-  <q>Best chicken salad that I have had in a very, very long time</q>
-  <p class="author">- Jack king</p>
- 
+<section class="splide" aria-label="Slide Container Example">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <div class="splide__slide__container">
+          
+        </div>
+       <img src="images/test2.png" alt="">
+      </li>
+      <li class="splide__slide">
+        <div class="splide__slide__container">
+          
+        </div>
+        <img src="images/test3.png" alt="">
+      </li>
+      
+       <li class="splide__slide">
+        <div class="splide__slide__container">
+        </div>
+       <img src="images/test4.png" alt="">
+      </li>
+    </ul>
+  </div>
+</section>
 </div>
 
-<div class="mySlides">
- <img src="images/img5.png" style="width:33.33%">
 
-  
- <img src="images/img6.png" style="width:33.33%">
- 
-  
-<img src="images/img7.png" style="width:33.33%">
-  <q>Chicken Salad Chick is one of my favorite places to have lunch!</q>
-  <p class="author">- John Anderson</p>
-</div>
-
-<div class="mySlides">
-<img src="images/test2.png" style="width:33.33%">
-
-  
- <img src="images/test3.png" style="width:33.33%">
- 
-  
-<img src="images/test4.png" style="width:33.33%">
-  <q>Great atmosphere and friendly people!</q>
-  <p class="author">- John Doe</p>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-</div>
-
-<div class="dot-container">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-</div>
 
 
 

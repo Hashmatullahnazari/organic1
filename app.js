@@ -8,29 +8,26 @@ function myFunction() {
 }
 
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var splide = new Splide(".splide", {
+  autoWidth: true,
+  type: "loop",
+  perPage: 3,
+  focus: "center",
+  height: 400,
+  gap: 10,
+  lazyLoad: "nearby"
+}).mount();
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+// Listen to a native event.
+var track = splide.Components.Elements.track;
+splide.on(
+  "click",
+  function () {
+    // do something.
+    // Output a track element
+    console.log(splide.Components.Elements.track);
+    // Output all slide elements.
+    //console.log(splide.Components.Elements.slides);
+  },
+  track
+);

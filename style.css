@@ -296,110 +296,25 @@ background-image: url(images/main.png);
 
 .section4 {
 max-width: 100%;
+  
  
-padding: 64px;
+
    background:#b98d2b ;
-    position: relative;
-}
-
-
-
-
-/* Slideshow container */
-/* Slideshow container */
-.section4 .slideshow-container {
-    width: 100%;
-  position: relative;
-  background: #f1f1f1f1;
-}
-
-/* Slides */
-.section4 .mySlides {
-  padding: 80px;
-  text-align: center;
-    background: navajowhite;
-}
-
-.section4 .mySlides img {
-  float: left;
- padding:2px;
-    height: 400px
-}
-
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: #888;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-}
-
-/* The dot/bullet/indicator container */
-.section4 .dot-container {
-    text-align: center;
-    padding: 20px;
-    background: navajowhite;
-}
-
-/* The dots/bullets/indicators */
-.section4 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #000;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-/* Add a background color to the active dot/circle */
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Add an italic font style to all quotes */
-q {font-style: italic;}
-
-/* Add a blue color to the author */
-.author {color: cornflowerblue;}
-
-/* On smaller screens, decrease text size */
-@media screen and (max-width: 900px) and (min-width: 0px) {
-  .section4 .text {
-      font-size: 11px;
-    
-    }
-    
-   .section4 .mySlides img {
-  float: left;
-       max-width: 100%;
- padding:2px;
-    height: 100px
-}
     
 }
+.section4 .splide__slide {
+  color: #fff;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 20px;
+  background-color: rgba(244, 244, 244, 0.1);
+}
+
+
+
 
 .section6 {
     width: 100%;
